@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Fadilah</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row d-flex mt-4 mb-4">
+      <div class="col-lg-6">
+        <!-- Pesan -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/ahmad.jpg" class="img-fluid rounded-start" alt="me">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id="name"></h5>
+                <p class="card-text" id="date"></p>
+                <p class="card-text text-muted" id="event-date"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <!-- Cek IPK -->
+        <input type="text" class="form-control" id="ipk" placeholder="IPK anda">
+        <button id="submit-ipk" class="btn btn-lg btn-success mt-4 mb-4">Submit</button>
+
+        <!-- Output IPK -->
+        <div id="output-ipk"></div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- Loop -->
+        <input type="number" id="loop" class="form-control" placeholder="Looping">
+        <button id="submit-loop" class="btn btn-lg btn-success mt-4">Submit</button>
+
+        <ul class="list-group mt-4" id="list-loop">
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <!-- Lingkaran -->
+        <input type="number" id="jari" class="form-control" placeholder="Jari-jari">
+        <button id="submit-jari" class="btn btn-lg btn-success mt-4 mb-4">Submit</button>
+
+        <h1 id="output-luas"></h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+
+      </div>
+      <div class="col-lg-6">
+        <!-- Operasi Matematika -->
+        <div class="row">
+          <div class="col-6">
+            <input type="text" id="num1" class="form-control" placeholder="Bilangan 1">
+          </div>
+          <div class="col-6">
+            <input type="text" id="num2" class="form-control" placeholder="Bilangan 2">
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-6">
+            <select id="operasi" class="form-select">
+              <option value="ditambah" id="ditambah">Ditambah</option>
+              <option value="dikurang" id="dikurang">Dikurang</option>
+              <option value="Dibagi" id="Dibagi">Dibagi</option>
+              <option value="Dikali" id="Dikali">Dikali</option>
+            </select>
+          </div>
+          <div class="col-6 d-grid gap-2">
+            <button id="submit-operasi" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+        <h1 id="output-operasi"></h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/custom.js"></script>
+
+  <script>
+
+    //function tambah(x, y) {
+    //return x + y
+    //}
+
+    //let nama = window.prompt("Nama Anda")
+
+    //let namaHari = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu']
+    //let bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
+    //const [day, month, date, years] = new Date().toDateString().split(" ");
+    //console.log(day, month, date, years)
+    //var tanggal = new Date()
+    //var hari = tanggal.getDay();
+    //var tgl = tanggal.getDate();
+    //var bln = tanggal.getMonth();
+    //var thn = tanggal.getFullYear();
+    //var dtk = tanggal.getSeconds();
+    //var mnt = tanggal.getMinutes();
+    //var jam = tanggal.getHours();
+
+    //const button = document.getElementById('submit')
+    //button.addEventListener('click', () => {
+      //let jari = window.prompt('Masukan Jari-jari')
+
+      //let luas = Math.floor(Math.PI * jari * jari)
+      //document.write(`Luas Lingkaran adalah ${luas}`)
+    //})
+
+    //kalau hari selain senin - jumat = libur
+
+    //document.write(`<pre>`);
+    //document.write(`Nama anda : ${nama} <br>`);
+    //document.write(`Tanggal : ${namaHari[hari - 1]}, ${tgl}-${bulan[bln]}-${thn} <br>`);
+    //document.write(`Hasil penjumlahan 2 ditambah 7 sama dengan ${tambah(2, 7)} <br>`);
+    //if (hari > 5) {
+      //document.write("Sekarang Hari Libur")
+    //} else {
+      //document.write("Sekarang Hari Kerja")
+    //}
+    //document.write(`</pre>`);
+  </script>
+</body>
+
+</html>

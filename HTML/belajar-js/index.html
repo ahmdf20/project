@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar JavaScript</title>
+  <style>
+    .canvas {
+      margin-top: 10px;
+      width: 300px;
+      height: 300px;
+      border: 1px solid #000;
+      overflow: auto;
+      padding: 3vh;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="number" id="x">
+  <select id="operasi">
+    <option value="/">/</option>
+    <option value="*">x</option>
+    <option value="+">+</option>
+    <option value="-">-</option>
+  </select>
+  <input type="number" id="y">
+  <button id="submit-operasi">Submit</button>
+  <br>
+
+  <div style="margin-top: 10px;">
+    <label for="do-loop">Batas pengulangan</label>
+    <input type="number" id="loop">
+    <button id="submit-loop">Submit</button>
+  </div>
+
+  <div id="canvas" class="canvas"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

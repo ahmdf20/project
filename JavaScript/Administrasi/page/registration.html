@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrasi | Registration</title>
+
+  <!-- Assets Bootstrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body class="bg-secondary">
+  <div class="container">
+    <div class="row my-5 p-3 justify-content-center">
+      <div class="col-lg-5">
+        <div class="card shadow-lg p-3">
+          <div class="card-body">
+            <h1 class="card-title text-center">Registration</h1>
+            <hr>
+            <form id="form-registration" action="./login.html">
+              <div class="form-group mt-3">
+                <label for="email">Full Name</label>
+                <input type="text" class="form-control" id="name" required autofocus>
+              </div>
+              <div class="form-group mt-3">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+                <small class="text-danger" id="error-email"></small>
+              </div>
+              <div class="form-group mt-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" required minlength="4">
+              </div>
+              <div class="form-group mt-3">
+                <label for="password">Repeat Password</label>
+                <input type="password" class="form-control" id="repeat-password" required minlength="4">
+                <small class="text-danger" id="error-repeat-password"></small>
+              </div>
+              <div class="d-grid gap-2 mt-3">
+                <button type="submit" id="submit-registration" class="btn btn-primary">Registration</button>
+                <a href="./login.html" class="text-dark text-center">Already have account? Login.</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="./js/script.js"></script>
+
+  <!-- Bundle Bootstrap -->
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
